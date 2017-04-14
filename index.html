@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Resume</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"></link>
+  
+  <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Patua+One"rel="stylesheet"'>
+<link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Fjalla+One'>
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  
+<div class="resume">
+  <div class="left_block">
+    <div id="aboutme">
+      <h1>ABOUT ME</h1>
+      <div class="title_hr"></div>
+      <p>嗨! 我目前正在半導體製造業就職，主要負責以AutoCAD繪製工程所需的光罩圖，除此之外也會依部門需求撰寫Excel VBA功能，但因為大部分的能力只能侷限在辦公室理發揮，我想要學習一技之長，提升屬於自己的附加價值，於是利用下班及假日時間學習其他程式語言，而在偶然的機會下接觸了網頁開發的領域，很喜歡從無到有把畫面功能刻畫出來的成就感，希望能將這份熱忱投入工作，朝前端工程師的目標前進!</p>
+      <div id="exp">
+        <div class="edu">
+          <div class="icon"><i class="fa fa-graduation-cap"></i></div>
+          <div class="detail">
+            <ul>
+              <li v-for="value in college">{{value}}</li>
+            </ul>
+          </div>
+        </div>
+        <div class="job">
+          <div class="icon"><i class="fa fa-briefcase"></i></div>
+          <div class="detail">
+            <ul>
+              <li v-for="value in company">{{value}}</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="achievement">
+      <h1>ACHIEVEMENT</h1>
+      <div class="title_hr"></div>
+      <ul>
+        <li>	畢業論文競賽獲第一名殊榮</li>
+        <li>	年度人因年會獲佳作</li>
+        <li>TOEIC scored 723</li>
+        <li>參與部門<abbr title="Continuous Improvement Program">CIP</abbr>計畫，負責報表功能設計</li>
+      </ul><img class="award_icon" src="https://image.flaticon.com/icons/svg/321/321773.svg" alt=""/>
+    </div>
+    <div id="skills">
+      <h1>SKILLS</h1>
+      <div class="title_hr"></div>
+      <ul>
+        <li class="html"><img src="http://www.scottace.com/img/html5-icon.png" alt=""/>
+          <div class="progressbar">
+            <div class="bar bar_html"></div>
+            <p class="frame">Jade</p>
+          </div>
+          <p>50%</p>
+        </li>
+        <li class="css"><img src="http://www.scottace.com/img/css3-icon.png" alt=""/>
+          <div class="progressbar">
+            <div class="bar bar_css"></div>
+            <p class="frame">Sass</p>
+          </div>
+          <p>60%</p>
+        </li>
+        <li class="js"><img src="https://www.easyprogramming.net/logo/js.png" alt=""/>
+          <div class="progressbar">
+            <div class="bar bar_js"></div>
+            <p class="frame">jQuery + Vue.js</p>
+          </div>
+          <p>20%</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="photo"></div>
+  <div class="contacts">
+    <h2 class="name">林子皓</h2>
+    <h3 class="name en">Nick Lin</h3>
+    <div class="contactways">
+      <h4>contacts</h4>
+      <div class="smalltitle_hr"></div>
+      <ul>
+        <li class="mail"><a href="mailto:unick.zhow@gmail.com"><i class="fa fa-envelope"></i><span>unick.zhow@gmail.com</span></a></li>
+        <li class="mobile"><i class="fa fa-mobile fa-2x"> </i>
+          <sapn>+886-983-232-597</sapn>
+        </li>
+        <li class="github"><a href="https://github.com/uNickLin?tab=repositories" target="_blank"><i class="fa fa-github fa-2x"></i><span>Github</span></a></li>
+        <li class="codepen"><a href="https://codepen.io/uNickHow/" target="_blank"><i class="fa fa-codepen"></i><span>Codepen</span></a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.2.4/vue.min.js'></script>
+
+    <script src="js/index.js"></script>
+
+</body>
+</html>

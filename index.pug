@@ -1,0 +1,76 @@
+.resume
+  .left_block
+    #aboutme
+      h1 ABOUT ME
+      .title_hr
+      p 嗨! 我目前正在半導體製造業就職，主要負責以AutoCAD繪製工程所需的光罩圖，除此之外也會依部門需求撰寫Excel VBA功能，但因為大部分的能力只能侷限在辦公室理發揮，我想要學習一技之長，提升屬於自己的附加價值，於是利用下班及假日時間學習其他程式語言，而在偶然的機會下接觸了網頁開發的領域，很喜歡從無到有把畫面功能刻畫出來的成就感，希望能將這份熱忱投入工作，朝前端工程師的目標前進!
+      
+      #exp
+        .edu
+          .icon
+            i.fa.fa-graduation-cap
+          .detail
+            ul
+              li(v-for="value in college") {{value}}
+        .job
+          .icon
+            i.fa.fa-briefcase
+          .detail
+            ul
+              li(v-for="value in company") {{value}}
+
+    #achievement
+      h1 ACHIEVEMENT
+      .title_hr
+      ul
+        li 	畢業論文競賽獲第一名殊榮
+        li 	年度人因年會獲佳作
+        li TOEIC scored 723
+        li 參與部門<abbr title="Continuous Improvement Program">CIP</abbr>計畫，負責報表功能設計
+      img.award_icon(src="https://image.flaticon.com/icons/svg/321/321773.svg", alt="")
+
+    #skills
+      h1 SKILLS
+      .title_hr
+      ul
+        li.html
+          img(src="http://www.scottace.com/img/html5-icon.png", alt="")
+          .progressbar
+            .bar.bar_html
+            p.frame Jade
+          p 50%
+        li.css
+          img(src="http://www.scottace.com/img/css3-icon.png", alt="")
+          .progressbar
+            .bar.bar_css
+            p.frame Sass
+          p 60%
+        li.js
+          img(src="https://www.easyprogramming.net/logo/js.png", alt="")
+          .progressbar
+            .bar.bar_js
+            p.frame jQuery + Vue.js
+          p 20%
+  .photo
+  .contacts
+    h2.name 林子皓
+    h3.name.en Nick Lin
+    .contactways
+      h4 contacts
+      .smalltitle_hr
+      ul
+        li.mail
+          a(href='mailto:unick.zhow@gmail.com')
+            i.fa.fa-envelope
+            span unick.zhow@gmail.com
+        li.mobile
+          i.fa.fa-mobile.fa-2x 
+          sapn +886-983-232-597
+        li.github
+          a(href="https://github.com/uNickLin?tab=repositories" target="_blank")
+            i.fa.fa-github.fa-2x
+            span Github
+        li.codepen
+          a(href="https://codepen.io/uNickHow/" target="_blank")
+            i.fa.fa-codepen
+            span Codepen

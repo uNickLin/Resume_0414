@@ -1,0 +1,279 @@
+$color_blue_Sass_bar: #2FA5CC
+$color_red_Jade_bar: #f24
+$color_yellow_JS_bar: #F0D53E
+$color_bgwhite: #EEEFEA
+$color_grey: #333
+$color_yellow: #FFC857
+$color_white: #fff
+
+@mixin size($w, $h)
+  width: $w
+  height: $h
+
+*
+  // border: solid 1px
+  font-family: 'Fjalla One', sans-serif, 微軟正黑體
+  user-select: none
+  box-sizing: border-box
+
+body, html
+  padding: 0px
+  margin: 0px
+  height: 100%
+  background-color: $color_bgwhite
+
+.title_hr
+  border: solid 3px $color_yellow
+  +size(80px, auto)
+  margin-bottom: 20px
+  transition: .2s
+  
+.smalltitle_hr
+  border: solid 3px $color_yellow
+  +size(40px, auto)
+  margin: auto auto
+  margin-bottom: 40px
+  
+p
+  text-indent: 34px
+  
+// frame settings ===================================
+  
+.resume
+  +size(870px, auto)
+  margin: auto
+  margin-bottom: 30px
+  top: 50px
+  position: relative
+  display: flex
+  flex-wrap: wrap
+  background-color: $color_grey
+  box-shadow: -8px 8px 10px 2px rgba(0,0,0,0.3)
+  
+.left_block
+  background-color: $color_white
+
+  
+// About me settings===========================
+
+#aboutme
+  +size(600px, 400px)
+  padding: 10px 40px
+  cursor: default
+  transition: .2s
+  
+  &:hover
+    transform: scale(1.01)
+  
+  .edu, .job
+    margin-top: 10px
+    display: inline-flex
+    align-items: center
+    
+    &:hover
+      i
+        animation: pulse 1s both infinite
+    
+  .job
+    margin-left: 50px
+  
+  i
+    font-size: 30px
+    text-align: center
+    +size(60px, 60px)
+    background-color: $color_yellow
+    border-radius: 50%
+    line-height: 60px
+    color: $color_white
+    margin: 0 10px 10px 10px
+    transition: .2s
+    
+    
+  ul
+    list-style: none
+    padding: 0px
+
+  span
+    font-size: 10px
+    color: $color_grey
+    
+
+// Achievement settings =======================
+  
+#achievement
+  +size(600px, 250px)
+  padding: 10px 40px
+  margin-top: -20px
+  transition: .2s
+  position: relative
+  cursor: default
+  
+  img
+    +size(100px, 100px)
+    position: absolute
+    right: 100px
+    top: 110px
+    transition: .2s
+  
+  &:hover
+    transform: scale(1.01)
+    img
+      animation: tada 1s both
+  
+  li
+    line-height: 30px
+    
+    
+// skills setting ===============================
+  
+#skills
+  +size(600px, 300px)
+  padding: 10px 40px
+  transition: .2s
+  cursor: default
+  
+  &:hover
+    transform: scale(1.01)
+  
+  ul
+    list-style: none
+    padding-left: 0px
+    margin-top: -10px
+    flex-wrap: wrap
+    
+    li
+      margin: 5px
+      display: inline-flex
+      align-items: center
+      
+      p
+        margin-top: 10px
+          
+    img
+      +size(50px, 50px)
+      transition: .2s
+      
+    .html:hover
+      img
+        transform: scale(1.1)
+      p
+        animation: pulse 1s both infinite
+        
+    .css:hover
+      img
+        transform: scale(1.1)
+      p
+        animation: pulse 1s both infinite
+        
+    .js:hover
+      img
+        transform: scale(1.1)
+      p
+        animation: pulse 1s both infinite
+      
+    .progressbar
+      +size(350px, 20px)
+      border: solid 3px $color_bgwhite
+      margin-left: 40px
+      border-radius: 8px
+      
+      .bar_html
+        +size(175px, 11px)
+        margin: 1.5px
+        background-color: #f24
+        border-radius: 8px
+        
+      .bar_css
+        +size(210px, 11px)
+        margin: 1.5px
+        background-color: $color_blue_Sass_bar
+        border-radius: 8px
+        
+      .bar_js
+        +size(70px, 11px)
+        margin: 1.5px
+        background-color: $color_yellow_JS_bar
+        border-radius: 8px
+        
+      p
+        text-indent: 0px
+        
+      .frame
+        position: absolute
+        
+
+// Photo settings =================================
+
+.photo
+  +size(200px, 200px)
+  position: absolute
+  right: 35px
+  top: 35px
+  border: solid 10px $color_white
+  border-radius: 50%
+  
+  background-image: url(http://www.new-word.com/wp-content/uploads/2016/09/commercial-lawyer.png)
+  background-position: -2px 5px
+  background-repeat: no-repeat
+  background-size: cover
+  box-shadow: -8px 8px 10px 2px rgba(0,0,0,0.3)
+  
+  transition: .5s
+  
+  &:hover
+    transform: translate(-5px, -5px)
+    box-shadow: -8px 8px 15px 2px rgba(0,0,0,0.8)
+  
+
+// contacts settings ==============================
+  
+.contacts
+  +size(270px, 300px)
+  color: $color_white
+  position: absolute
+  right: 0px
+  top: 250px
+  padding: 10px 20px
+  text-align: center
+  
+  h4
+    animation: rubberBand 2s both infinite
+
+  
+  .name, .en
+    text-align: center
+  
+  .en  
+    margin-bottom: 60px
+  
+  .contactways
+    margin-top: 200px
+    
+    ul
+      margin: 0
+      margin-left: 12px
+      padding: 0
+      list-style: none
+      a
+        display: inline-flex
+        text-decoration: none
+        
+        &:link, &:visited, &:active
+          color: $color_white
+        
+      li
+        display: flex
+        align-items: center
+        margin: 10px
+    
+    i
+      +size(30px, 30px)
+      display: flex
+      align-items: center
+      justify-content: center
+      border-radius: 50%
+      background-color: $color_yellow
+      margin-right: 10px
+      
+    span
+      margin-top: 4px
